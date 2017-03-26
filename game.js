@@ -10,7 +10,6 @@ var key = pjs.keyControl.initKeyControl();
 // --- всякое для движка и удобства
 
 var text;
-console.log(data.response[0]);
   VK.init(function() { 
         console.log("yra zarobotolo");
         VK.api("users.get",{"fields":"photo_50"},function(data){
