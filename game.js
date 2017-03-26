@@ -9,19 +9,25 @@ var cam = pjs.camera;
 var key = pjs.keyControl.initKeyControl();
 // --- всякое для движка и удобства
 
-
-
+var text;
+console.log(data.response[0]);
   VK.init(function() { 
         console.log("yra zarobotolo");
         VK.api("users.get",{"fields":"photo_50"},function(data){
-            console.log(data.response[0]);
+            text = game.newTextObject({
+                x: 10, y: 10,
+                fillColor: "#000000",
+                text: data.response[0].first_name 
+            })
         });
      }, function() { 
         console.log("lol");
      }, '5.63'); 
 
+
 var lp1 = function(){
-    console.log(7);
+    game.clear();
+    text.draw();
 }
 
   game.newLoop("lp1",lp1);
