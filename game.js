@@ -26,7 +26,7 @@ var lp1 = function(){
 			text = game.newTextObject( { 
 			x : 100, 
 			y : 100, 
-			text : data.response[0].first_name, 
+			text : data.response[0].first_name+"--", 
 			size : 20, 
 			padding : 10, 
 			color : "#000000", 
