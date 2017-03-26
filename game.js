@@ -21,7 +21,7 @@ var lp1 = function(){
 	VK.init(function() { 
 		console.log("yra zarobotolo");
 		VK.api("users.get",{"fields":"photo_50"},function(data){
-			console.log("yra");
+			console.log("yra2");
 			console.log(data);
 			text = game.newTextObject( { 
 			x : 100, 
