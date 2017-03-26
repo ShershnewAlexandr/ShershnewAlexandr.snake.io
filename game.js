@@ -15,17 +15,17 @@ var text;
         VK.api("users.get",{"fields":"photo_50"},function(data){
             console.log("yra");
             console.log(data);
-            text = game.newTextObject({
-                x : 100, 
-                y : 100, 
-                size : 20, 
-                padding : 10, 
-                color : "#000000", 
-                fillColor : "#FBFE6F", 
-                strokeColor : "#DA4848", 
-                strokeWidth : 2, 
-                text: data.response[0].first_name 
-            });
+            text = game.newTextObject( { 
+  x : 100, 
+  y : 100, 
+  text : "Привет, мир!", 
+  size : 20, 
+  padding : 10, 
+  color : "#000000", 
+  fillColor : "#FBFE6F", 
+  strokeColor : "#DA4848", 
+  strokeWidth : 2, 
+});
         });
      }, function() { 
         console.log("lol");
