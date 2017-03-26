@@ -12,6 +12,9 @@
 
   VK.init(function() { 
         console.log("yra zarobotolo");
+        VK.api("users.get",{},function(data){
+            console.log(data);
+        });
      }, function() { 
         console.log("lol");
      }, '5.63'); 
