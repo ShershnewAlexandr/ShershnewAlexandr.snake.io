@@ -9,12 +9,12 @@ var cam = pjs.camera;
 var key = pjs.keyControl.initKeyControl();
 // --- всякое для движка и удобства
 
-var text = game.newTextObject( { 
-  
-});;
+var text;
   VK.init(function() { 
         console.log("yra zarobotolo");
         VK.api("users.get",{"fields":"photo_50"},function(data){
+            console.log("yra");
+            console.log(data);
             text = game.newTextObject({
                 x : 100, 
                 y : 100, 
